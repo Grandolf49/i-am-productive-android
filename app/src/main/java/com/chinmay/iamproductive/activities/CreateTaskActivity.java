@@ -1,9 +1,11 @@
-package com.chinmay.iamproductive;
+package com.chinmay.iamproductive.activities;
 
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.chinmay.iamproductive.R;
 
 /**
  * Created by grandolf49 on 17-03-2020
