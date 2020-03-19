@@ -40,12 +40,14 @@
             android:onClick="onClick" />
 
         <TextView
+            android:id="@+id/tv_create_task"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:fontFamily="sans-serif-light"
-            android:text="Create"
+            android:onClick="onClick"
+            android:text="@string/btn_create_task"
             android:textColor="@color/colorWhite"
             android:textSize="18sp"
             android:textStyle="bold" />

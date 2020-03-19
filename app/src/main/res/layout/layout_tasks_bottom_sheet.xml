@@ -20,6 +20,38 @@
         android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/ll_all_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_create_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-medium"
+            android:onClick="onClickCreateTask"
+            android:text="@string/create_a_new_task"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_add_black_24dp"
+            app:iconTint="@color/colorWhite" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_all_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/ll_empty_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,12 +59,14 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="40dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/iv_desc_empty_tasks"
             android:src="@drawable/ic_add_task" />
 
         <TextView
@@ -40,10 +74,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-light"
-            android:text="No tasks added. Click the button to create a task" />
+            android:text="@string/tv_empty_task_hint" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/btn_tasks"
+            android:id="@+id/btn_create_first_task"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -51,10 +85,10 @@
             android:layout_marginBottom="30dp"
             android:backgroundTint="@color/colorPrimaryDark"
             android:fontFamily="sans-serif-medium"
+            android:onClick="onClickCreateTask"
             android:text="@string/create_a_new_task"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:onClick="onClickCreateTask"
             android:textColor="@color/colorWhite"
             android:textSize="14sp"
             app:icon="@drawable/ic_add_black_24dp"

@@ -22,6 +22,9 @@ public class CreateTaskActivity extends AppCompatActivity {
             case R.id.iv_back:
                 finish();
                 break;
+            case R.id.tv_create_task:
+                //Create Task Code
+                break;
         }
     }
 }

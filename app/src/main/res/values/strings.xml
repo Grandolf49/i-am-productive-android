@@ -3,4 +3,7 @@
     <string name="title_tasks">Tasks</string>
     <string name="create_a_new_task">Create a new Task</string>
     <string name="hint_new_task">New Task</string>
+    <string name="btn_create_task">Create</string>
+    <string name="tv_empty_task_hint">No tasks added. Click the button to create a task</string>
+    <string name="iv_desc_empty_tasks">Empty Tasks</string>
 </resources>
