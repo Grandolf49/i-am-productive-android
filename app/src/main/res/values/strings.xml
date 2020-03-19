@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">I am Productive</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="create_a_new_task">Create a new Task</string>
+</resources>
