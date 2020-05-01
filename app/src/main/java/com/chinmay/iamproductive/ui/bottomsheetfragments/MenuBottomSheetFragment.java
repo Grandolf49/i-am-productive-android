@@ -1,4 +1,4 @@
-package com.chinmay.iamproductive.bottomsheetfragments;
+package com.chinmay.iamproductive.ui.bottomsheetfragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

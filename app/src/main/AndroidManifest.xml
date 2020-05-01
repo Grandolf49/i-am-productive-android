@@ -9,9 +9,9 @@
         android:roundIcon="@drawable/ic_app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TaskDetailsActivity"></activity>
-        <activity android:name=".activities.CreateTaskActivity" />
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".ui.activities.TaskDetailsActivity"></activity>
+        <activity android:name=".ui.activities.CreateTaskActivity" />
+        <activity android:name=".ui.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

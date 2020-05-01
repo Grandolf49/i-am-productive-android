@@ -1,4 +1,4 @@
-package com.chinmay.iamproductive.bottomsheetfragments;
+package com.chinmay.iamproductive.ui.bottomsheetfragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,9 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.chinmay.iamproductive.R;
-import com.chinmay.iamproductive.TaskDetailsActivity;
-import com.chinmay.iamproductive.alltasksmodel.AllTasksRecyclerAdapter;
-import com.chinmay.iamproductive.alltasksmodel.TaskModel;
+import com.chinmay.iamproductive.ui.activities.TaskDetailsActivity;
+import com.chinmay.iamproductive.ui.alltasksmodel.AllTasksRecyclerAdapter;
+import com.chinmay.iamproductive.ui.alltasksmodel.TaskModel;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.ArrayList;

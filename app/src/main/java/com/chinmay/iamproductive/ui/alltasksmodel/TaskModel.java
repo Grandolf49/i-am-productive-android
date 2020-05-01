@@ -1,4 +1,4 @@
-package com.chinmay.iamproductive.alltasksmodel;
+package com.chinmay.iamproductive.ui.alltasksmodel;
 
 /**
  * Created by grandolf49 on 19-03-2020

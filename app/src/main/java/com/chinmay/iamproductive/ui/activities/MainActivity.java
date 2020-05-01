@@ -1,4 +1,4 @@
-package com.chinmay.iamproductive.activities;
+package com.chinmay.iamproductive.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.chinmay.iamproductive.R;
-import com.chinmay.iamproductive.bottomsheetfragments.MenuBottomSheetFragment;
-import com.chinmay.iamproductive.bottomsheetfragments.TasksBottomSheetFragment;
+import com.chinmay.iamproductive.ui.bottomsheetfragments.MenuBottomSheetFragment;
+import com.chinmay.iamproductive.ui.bottomsheetfragments.TasksBottomSheetFragment;
 import com.google.android.material.bottomappbar.BottomAppBar;
 
 /**

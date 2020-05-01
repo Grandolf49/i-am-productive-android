@@ -1,4 +1,4 @@
-package com.chinmay.iamproductive.alltasksmodel;
+package com.chinmay.iamproductive.ui.alltasksmodel;
 
 import android.view.LayoutInflater;
 import android.view.View;

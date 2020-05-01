@@ -1,4 +1,4 @@
-package com.chinmay.iamproductive.activities;
+package com.chinmay.iamproductive.ui.activities;
 
 import android.os.Bundle;
 import android.view.View;

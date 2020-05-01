@@ -6,4 +6,5 @@
     <string name="btn_create_task">Create</string>
     <string name="tv_empty_task_hint">No tasks added. Click the button to create a task</string>
     <string name="iv_desc_empty_tasks">Empty Tasks</string>
+    <string name="start_project">Start Project</string>
 </resources>
