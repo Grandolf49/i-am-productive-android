@@ -7,7 +7,6 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 import com.chinmay.iamproductive.database.entities.ProjectEntity;
-import com.chinmay.iamproductive.database.entities.TaskEntity;
 
 import java.util.List;
 
@@ -27,7 +26,4 @@ public interface ProjectDao {
 
     @Query("select * from project_table")
     List<ProjectEntity> getAllProjects();
-
-    @Query("select * from task_table where projectId=:id")
-    List<TaskEntity> getAllTasksByProjectId(int id);
 }
