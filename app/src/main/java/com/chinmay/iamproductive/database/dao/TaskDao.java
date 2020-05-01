@@ -25,5 +25,5 @@ public interface TaskDao {
     void delete(TaskEntity task);
 
     @Query("select * from task_table where projectId=:projectId")
-    List<TaskEntity> getAllTasksByProjectId(int projectId);
+    List<TaskEntity> getTasksByProjectId(int projectId);
 }
