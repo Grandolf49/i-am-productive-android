@@ -2,6 +2,7 @@ package com.chinmay.iamproductive.database.entities;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
 
 import java.util.List;
 
@@ -12,10 +13,15 @@ import static com.chinmay.iamproductive.database.DataBaseConstants.PROJECT_TABLE
  */
 @Entity(tableName = PROJECT_TABLE_NAME)
 public class ProjectEntity {
+
     @PrimaryKey(autoGenerate = true)
     public int projectId;
+
     public String projectName;
+
     public int color;
+
+    @TypeConverters(TaskTypeConverter.class)
     public List<TaskEntity> tasks;
 
     public ProjectEntity(String projectName, int color) {

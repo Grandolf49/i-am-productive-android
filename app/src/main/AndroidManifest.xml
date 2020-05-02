@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chinmay.iamproductive">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_app_icon"
@@ -9,9 +11,9 @@
         android:roundIcon="@drawable/ic_app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activities.TaskDetailsActivity"></activity>
+        <activity android:name=".ui.activities.TaskDetailsActivity" />
         <activity android:name=".ui.activities.CreateTaskActivity" />
-        <activity android:name=".ui.activities.MainActivity">
+        <activity android:name=".ui.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

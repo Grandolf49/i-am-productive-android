@@ -2,6 +2,7 @@ package com.chinmay.iamproductive.database.entities;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+import androidx.room.TypeConverters;
 
 import java.util.List;
 
@@ -12,11 +13,17 @@ import static com.chinmay.iamproductive.database.DataBaseConstants.TASK_TABLE_NA
  */
 @Entity(tableName = TASK_TABLE_NAME)
 public class TaskEntity {
+
     @PrimaryKey(autoGenerate = true)
     public int taskId;
+
     public int projectId;
+
     public String taskName;
+
+    @TypeConverters(RecordTypeConverter.class)
     public List<RecordEntity> records;
+
     /**
      * totalTime - It will keep a track of the total number of milliseconds spent in a particular
      * task

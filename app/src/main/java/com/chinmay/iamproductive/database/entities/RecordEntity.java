@@ -10,12 +10,18 @@ import static com.chinmay.iamproductive.database.DataBaseConstants.RECORD_TABLE_
  */
 @Entity(tableName = RECORD_TABLE_NAME)
 public class RecordEntity {
+
     @PrimaryKey(autoGenerate = true)
     public int recordId;
+
     public int taskId;
+
     public int projectId;
+
     public long startTime;
+
     public long endTime;
+
     public String date;
 
     public RecordEntity(long startTime, long endTime, String date) {
