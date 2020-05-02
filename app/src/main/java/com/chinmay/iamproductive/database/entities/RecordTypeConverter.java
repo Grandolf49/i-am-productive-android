@@ -17,7 +17,7 @@ public class RecordTypeConverter {
     private static Gson gson = new Gson();
 
     @TypeConverter
-    public static List<TaskEntity> stringToRecordList(String data) {
+    public static List<RecordEntity> stringToRecordList(String data) {
         if (data == null) {
             return Collections.emptyList();
         }
