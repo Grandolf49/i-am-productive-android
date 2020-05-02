@@ -3,6 +3,7 @@ package com.chinmay.iamproductive.ui.home;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -58,6 +59,6 @@ public class HomeActivity extends AppCompatActivity implements HomeMvpView {
 
     @Override
     public void showToastMessage(String message) {
-
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }
